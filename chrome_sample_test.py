@@ -4,7 +4,7 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get('http://www.google.com/')
 breakpoint()
-print(driver.page_response)
+print(driver.page_source)
 print(driver)
 print(dir(driver))
 time.sleep(5)
