@@ -8,8 +8,8 @@ for s in l:
         options = Options()
         options.page_load_strategy = s
         driver = webdriver.Chrome(options=options)
-        driver.get("http://www.google.com")
-        with open(f"download/google-{s}.html", "w") as f:
+        driver.get("http://ff14fish.carbuncleplushy.com/")
+        with open(f"download/ff14fish-{s}.html", "w") as f:
             f.write(driver.page_source)
     except Exception:
         print("Error")
